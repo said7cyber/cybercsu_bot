@@ -10,7 +10,6 @@ def main_menu_keyboard(lang: str = "uz") -> InlineKeyboardMarkup:
         [InlineKeyboardButton(text=t["location_btn"], callback_data="location")],
         [InlineKeyboardButton(text=t["contact_btn"], callback_data="contact")],
         [InlineKeyboardButton(text=t["language_btn"], callback_data="change_language")],
-        [InlineKeyboardButton(text="🌐 Mini ilova", web_app=WebAppInfo(url="https://said7cyber.github.io/cybercsu_bot/webapp.html"))],
     ]
     return InlineKeyboardMarkup(inline_keyboard=buttons)
 
